@@ -40,9 +40,8 @@ def decode(update, context):
 
 
 def cifrado_cesar(message, key, mode):
-    message    = message.upper()
     translated = ""
-    LETTERS    = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    LETTERS    = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-.áéíóú?!¿¡"
     for symbol in message:
         if symbol in LETTERS:
             num = LETTERS.find(symbol)
